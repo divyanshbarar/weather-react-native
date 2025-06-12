@@ -1,50 +1,145 @@
-# Welcome to your Expo app 👋
+# 🌤️ WeatherApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple and performant React Native application built with Expo that allows users to search for weather data by city name. The app displays key weather metrics and caches the last searched data for offline access.
 
-## Get started
+---
 
-1. Install dependencies
+## 🌐 Expo Demo
 
-   ```bash
-   npm install
-   ```
+**Live Demo:** exp://qzwo6c4-anonymous-8084.exp.direct
 
-2. Start the app
+**👉 Try it on Expo Go:**
+1. Install [Expo Go](https://expo.dev/client) on your mobile device
+2. Open the camera app and scan the QR code below
+3. Or manually enter the link: `exp://qzwo6c4-anonymous-8084.exp.direct`
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📸 Screenshots
 
-In the output, you'll find options to open the app in a
+| Home Screen | Search Results | Dark Mode |
+|-------------|----------------|-----------|
+| ![Home Screen](./screenshots/home.png) | ![Search Results](./screenshots/search.png) | ![Dark Mode](./screenshots/dark-mode.png) |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
+## 🎥 Demo Video
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+https://github.com/user-attachments/assets/your-video-file.mp4
 
-## Get a fresh project
+---
 
-When you're ready, run:
 
-```bash
-npm run reset-project
+## 📱 Features
+
+- 🔍 Search weather by city name
+- 🌡️ Display temperature, humidity, wind speed, and condition
+- 💾 Offline caching of last searched data using AsyncStorage
+- ⚙️ MVVM architecture for clean separation of concerns
+- 🚫 Graceful error handling for invalid cities and network issues
+
+### 🚀 Bonus Features
+
+- 🔄 Pull-to-refresh to manually reload weather
+- 🌙 Dark mode support (based on system setting)
+- ⏳ Debounced search input (optional)
+- 📲 Expo deployment for easy testing
+
+---
+
+## 📂 Project Structure
+
+```
+WeatherApp/
+├── app/                          # Expo Router pages
+│   ├── _layout.tsx
+│   └── index.tsx
+├── src/
+│   ├── models/                   # Weather data interfaces
+│   ├── viewmodels/              # ViewModel logic (state + actions)
+│   ├── views/components/        # Reusable UI components
+│   ├── services/                # API logic (VisualCrossing)
+│   └── context/                 # (optional) Theme or global context
+├── assets/
+├── README.md
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ⚙️ Tech Stack
 
-To learn more about developing your project with Expo, look at the following resources:
+- **React Native + TypeScript**
+- **Expo** (with Expo Router)
+- **AsyncStorage** for offline caching
+- **Fetch API** for network requests
+- **No external UI libraries** (only native styling)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🛠️ Setup Instructions
 
-Join our community of developers creating universal apps.
+### 1. 📦 Install Dependencies
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm install
+# or
+yarn install
+```
+
+### 2. 🔑 Add API Key
+
+Replace `YOUR_API_KEY` in `src/services/weatherService.ts` with your VisualCrossing Weather API key.
+
+### 3. ▶️ Run the App
+
+```bash
+npx expo start
+```
+
+Then scan the QR code using **Expo Go** on your mobile device.
+
+---
+
+## 🧪 Testing Features
+
+1. Search for a city (e.g., `London`)
+2. Disable your internet connection and restart the app — you should still see the last searched data
+3. Pull down to refresh weather (if implemented)
+4. Try an invalid city name to test error handling
+
+---
+
+## ✅ Architecture: MVVM
+
+- **Model**: `src/models/Weather.ts`
+- **View**: `app/index.tsx`, `src/views/components/`
+- **ViewModel**: `src/viewmodels/useWeatherViewModel.ts`
+- **Service**: `src/services/weatherService.ts`
+
+
+
+
+
+
+---
+
+## 📄 License
+
+MIT – Free to use and modify.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📞 Support
+
+If you encounter any issues or have questions, please open an issue on GitHub.
+
+**Happy coding! 🚀**
