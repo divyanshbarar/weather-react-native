@@ -12,6 +12,8 @@ https://github.com/user-attachments/assets/2fd3576d-7043-4de1-a76e-9fbcf5bacdbb
 
 **Live Demo:** exp://qzwo6c4-anonymous-8084.exp.direct
 
+**Have to update tunnel you can install and then can run**
+
 **👉 Try it on Expo Go:**
 1. Install [Expo Go](https://expo.dev/client) on your mobile device
 2. Open the camera app and scan the QR code below
