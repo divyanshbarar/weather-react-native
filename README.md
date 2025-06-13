@@ -3,7 +3,11 @@
 A simple and performant React Native application built with Expo that allows users to search for weather data by city name. The app displays key weather metrics and caches the last searched data for offline access.
 
 ---
+## 🎥 Demo Video
+https://github.com/user-attachments/assets/2fd3576d-7043-4de1-a76e-9fbcf5bacdbb
 
+
+---
 ## 🌐 Expo Demo
 
 **Live Demo:** exp://qzwo6c4-anonymous-8084.exp.direct
@@ -21,10 +25,10 @@ A simple and performant React Native application built with Expo that allows use
 |-------------|----------------|-----------|
 | ![Home Screen](./home.png) | ![Search Results](./search.png) | ![Dark Mode](./dark.png) |
 
----
-## 🎥 Demo Video
 
-https://github.com/user-attachments/assets/your-video-file.mp4
+
+
+
 
 ---
 
