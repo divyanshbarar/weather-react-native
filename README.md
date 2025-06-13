@@ -11,6 +11,7 @@ A simple and performant React Native application built with Expo that allows use
 **👉 Try it on Expo Go:**
 1. Install [Expo Go](https://expo.dev/client) on your mobile device
 2. Open the camera app and scan the QR code below
+   ![qr](./qrexpowheather.png)
 3. Or manually enter the link: `exp://qzwo6c4-anonymous-8084.exp.direct`
 ---
 
@@ -18,7 +19,7 @@ A simple and performant React Native application built with Expo that allows use
 
 | Home Screen | Search Results | Dark Mode |
 |-------------|----------------|-----------|
-| ![Home Screen](./screenshots/home.png) | ![Search Results](./screenshots/search.png) | ![Dark Mode](./screenshots/dark-mode.png) |
+| ![Home Screen](./home.png) | ![Search Results](./search.png) | ![Dark Mode](./dark.png) |
 
 ---
 ## 🎥 Demo Video
